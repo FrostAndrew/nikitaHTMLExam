@@ -19,6 +19,7 @@
 }
 .diagram-stats .stat-card {
 	height: 280px;
+	max-width: 500px;
 }
 
 .stat-card {
@@ -57,11 +58,11 @@
 }
 
 .diagram-stats .stat-card .stat-card-img {
-	padding: 20px;
 	width: calc(100% - 30px);
+	height: calc(var(--md-card-image-height) + 40px);
 }
 .diagram-stats .stat-card .stat-card-img img {
-	width: 100%;
+	width: calc(100% - 40px);
 	height: var(--md-card-image-height);
 }
 

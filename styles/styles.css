@@ -23,7 +23,6 @@ nav {
 
 .nav-title {
 	display: flex;
-
 }
 .hr {
 	min-width: 100%;
@@ -56,11 +55,15 @@ li.active a {
 li.active:hover {
 	box-shadow: var(--shadow);
 }
-
-.content {
+#innerContentFrame {
+	padding: 0;
 	position: relative;
 	left: 170px;
 	width: calc(100vw - 170px);
+	min-height: 100vh;
+}
+.content {
+	width: 100vw;
 	min-height: 100vh;
 	background-color: var(--darken-grey);
 
@@ -75,3 +78,4 @@ li.active:hover {
 	width: 20px;
 	height: 20px;
 }
+
