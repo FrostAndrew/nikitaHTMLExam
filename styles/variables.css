@@ -1,0 +1,17 @@
+:root {
+	--pink: #C32056;
+	--light-grey: #E3E3E3;
+	--gray: #C3C3C3;
+	--darken-grey: #EAEAEA;
+	--green: #448B00;
+	--dark-yellow: #D89E24;
+	--blue: #274D97;
+
+	--sm-shadow: 1px 1px 1px 0px rgba(195,195,195,1);
+	--shadow: 2px 2px 2px 0px rgba(195,195,195,1);
+
+	--border: 2px solid var(--light-grey);
+
+	--sm-card-image-size: 60px;
+	--md-card-image-height: 120px;
+}

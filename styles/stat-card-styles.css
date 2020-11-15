@@ -1,0 +1,129 @@
+@import './variables.css';
+
+.stats-grid {
+	display: grid;
+	grid-gap: 15px;
+	margin-bottom: 50px;
+}
+.stats-grid > * {
+	box-sizing: border-box;
+}
+.num-stats {
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.diagram-stats {
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.num-stats .stat-card {
+	height: 150px;
+}
+.diagram-stats .stat-card {
+	height: 280px;
+}
+
+.stat-card {
+	padding: 15px;
+}
+
+.stat-card .stat-card-img {
+	margin: -15px 0 0 15px;
+	display: flex;
+	position: relative;
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
+	box-shadow: var(--sm-shadow);
+}
+.stat-card .stat-card-img.green {
+	background-color: var(--green);
+}
+.stat-card .stat-card-img.dark-yellow {
+	background-color: var(--dark-yellow);
+}
+.stat-card .stat-card-img.blue {
+	background-color: var(--blue);
+}
+.stat-card .stat-card-img.pink {
+	background-color: var(--pink);
+}
+
+.num-stats .stat-card .stat-card-img {
+	width: var(--sm-card-image-size);
+	height: var(--sm-card-image-size);
+}
+.num-stats .stat-card .stat-card-img img {
+	width: 30px;
+	height: 30px;
+}
+
+.diagram-stats .stat-card .stat-card-img {
+	padding: 20px;
+	width: calc(100% - 30px);
+}
+.diagram-stats .stat-card .stat-card-img img {
+	width: 100%;
+	height: var(--md-card-image-height);
+}
+
+.stat-card .stat-card-body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	padding: 10px 15px 15px 15px;
+
+	background-color: white;
+	box-shadow: var(--shadow);
+}
+.num-stats .stat-card .stat-card-body {
+	top: calc(15px - var(--sm-card-image-size));
+}
+.diagram-stats .stat-card .stat-card-body {
+	top: calc(15px - (var(--md-card-image-height) + 40px));
+}
+
+.stat-card .info-value, .stat-card .info-line {
+	display: flex;
+	flex-direction: column;
+	height: 70%;
+	border-bottom: var(--border);
+}
+.stat-card .info-line {
+	flex-direction: column-reverse;
+	height: 90%;
+	padding-bottom: 10px;
+}
+
+.stat-card .info-value {
+	text-align: right;
+}
+
+.stat-card .info-value .info-type {
+	font-size: 12px;
+}
+.stat-card .info-value .value {
+	font-size: 24px;
+}
+
+.stat-card .info-line .info-title{
+	font-size: 18px;
+}
+.stat-card .info-line .info-subtitle{
+	font-size: 14px;
+}
+
+.stat-card .description {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 12px;
+}
+.stat-card .description a {
+	color: black;
+	text-decoration: none;
+}
+.stat-card .description .description-icon {
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}

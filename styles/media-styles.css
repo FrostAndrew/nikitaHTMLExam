@@ -1,0 +1,13 @@
+@media screen and (max-width: 991px) {
+	nav {
+		display: none !important;
+	}
+	.content {
+		left: 0;
+		width: 100%;
+	}
+	.content .page-title .toggle-navbar {
+		display: inline-block;
+		margin-right: 10px;
+	}
+}
