@@ -1,0 +1,9 @@
+.dashboard-icon:before {
+  content: url("./assets/dashboard_gray.svg");
+}
+.dashboard-icon :before {
+  display: inline-block;
+  background: url("./assets/dashboard_white.svg");
+  background-size: 12px 12px;
+  content: "";
+}
