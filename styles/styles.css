@@ -95,6 +95,7 @@ li.active:hover {
 	width: calc(100% - 170px);
 	left: 170px;
 	padding: 15px 5rem;
+	margin-top: 100px;
 	justify-content: space-evenly;
 	border-top: 1px solid rgba(0,0,0, 0.15);
 	background-color: var(--darken-grey);

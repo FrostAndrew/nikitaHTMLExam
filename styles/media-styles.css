@@ -13,4 +13,8 @@
 		display: inline-block;
 		margin-right: 10px;
 	}
+	.forms-stats {
+		flex-direction: column !important;
+		height: fit-content;
+	}
 }
